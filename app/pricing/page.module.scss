@@ -1,0 +1,17 @@
+@import "../styles/variables.module.scss";
+
+.pricingPage {
+  padding-top: 15vh;
+  .titleWrapper {
+    text-align: center;
+
+    * {
+      color: $color-light-black;
+    }
+  }
+  .paricingWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+  }
+}

@@ -1,0 +1,319 @@
+@import "./variables.module.scss";
+
+.homePage {
+  color: $color-white;
+
+  .secOne {
+    @include fullScreenSec();
+    background-image: $grad-bg;
+    color: $color-white;
+    .content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 100%;
+
+      .imageWrap {
+        position: absolute;
+        z-index: 1;
+        top: 26vh;
+        width: 25rem;
+        height: 25rem;
+        mix-blend-mode: luminosity;
+      }
+
+      .textWrapper {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        top: 72vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .secBgVideo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      pointer-events: none;
+      justify-content: center;
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          52.57% 52.57% at 50% 50%,
+          rgba(91, 70, 151, 0) 0,
+          rgba(15, 4, 46, 0.35) 100%
+        );
+      }
+
+      .bgImage,
+      .video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .secTwo {
+    @include fullScreenSec();
+    padding: 20vh 0;
+    background-image: $grad-bg;
+
+    .containerFluid {
+      height: 100%;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .videoWrapper {
+        position: relative;
+        z-index: 2;
+        background: linear-gradient(
+          179.98deg,
+          $color-medium-blue 0.02%,
+          #784df6 22.41%,
+          $color-light-purple 47.93%,
+          #492961
+        );
+        padding: 0.03rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .secBgImg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .secThree {
+    @include fullScreenSec();
+    background-image: radial-gradient(
+      88.33% 60.62% at 100.87% 48.33%,
+      rgb(86, 53, 173) 0%,
+      rgb(20, 9, 78) 100%
+    );
+    .videoWrapper {
+      mix-blend-mode: lighten;
+    }
+  }
+
+  .secFour {
+    @include fullScreenSec();
+    background-image: radial-gradient(
+      88.33% 60.62% at -10.33% 58.33%,
+      rgb(53, 53, 173) 0%,
+      rgb(20, 9, 78) 100%
+    );
+    .videoWrapper {
+      mix-blend-mode: lighten;
+      & > div > div > div > div > div {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .secFive {
+    padding: 15vh 0;
+    background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      $color-purple 0,
+      #14094e 100%
+    );
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .cardWrapper {
+        width: 100%;
+        .cards {
+          margin-bottom: 30px;
+          h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+          &:nth-child(2n) {
+            justify-content: flex-end;
+          }
+          > div:first-child {
+            padding-right: 5%;
+            img {
+              width: 290px;
+              height: 290px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .secSix {
+    @include fullScreenSec();
+    padding-top: 15vh;
+    background: url(../../public/images/grid.webp) 0 0/100% no-repeat,
+      radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(86, 53, 173) 0%,
+        rgb(20, 9, 78) 100%
+      );
+    .containerSe {
+      min-height: 100vh;
+    }
+    .content {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        text-align: center;
+      }
+      .imageWrap {
+        width: 25rem;
+        height: 25rem;
+        mix-blend-mode: luminosity;
+      }
+    }
+  }
+
+  .secSeven {
+    @include fullScreenSec();
+    padding: 15vh 0;
+    background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      rgb(53, 53, 173) 0%,
+      rgb(20, 9, 78) 100%
+    );
+    .content {
+      .textWrapper {
+        margin-bottom: 10vh;
+        font-size: 1.3rem;
+        color: $primary-light-color;
+      }
+    }
+
+    .galleryWrap {
+      cursor: grab;
+      user-select: none;
+      touch-action: pan-y;
+    }
+  }
+
+  .secEight {
+    @include fullScreenSec();
+    padding: 15vh 0 25vh;
+    background-image: radial-gradient(
+      88.33% 60.62% at 100.87% 48.33%,
+      rgb(86, 53, 173) 0%,
+      rgb(20, 9, 78) 100%
+    );
+
+    .galleryWrap {
+      margin-top: 10vh;
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      cursor: grab;
+      user-select: none;
+      touch-action: pan-y;
+      -webkit-mask-image: linear-gradient(
+        90deg,
+        transparent,
+        transparent 17%,
+        #000 50%,
+        #000
+      );
+      mask-image: linear-gradient(
+        90deg,
+        transparent,
+        transparent 17%,
+        #000 50%,
+        #000
+      );
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+    }
+  }
+
+  .secNine {
+    @include fullScreenSec();
+    padding-top: 15vh;
+    background: url(../../public/images/signup-bg.webp) 0 0/100% no-repeat,
+      radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(84, 51, 167) 0%,
+        rgb(20, 9, 78) 100%
+      );
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        text-align: center;
+      }
+      .imageWrap {
+        width: 25rem;
+        height: 25rem;
+        mix-blend-mode: luminosity;
+      }
+      .btnWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 1;
+        margin: 5rem 0 10rem;
+        a {
+          margin: 10px;
+          min-width: 200px;
+          span {
+            padding: 1rem 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+}

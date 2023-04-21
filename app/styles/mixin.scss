@@ -1,0 +1,14 @@
+// mixin
+@mixin fullScreenSec() {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@mixin lineClamp($lineCount: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lineCount;
+  -webkit-box-orient: vertical;
+}

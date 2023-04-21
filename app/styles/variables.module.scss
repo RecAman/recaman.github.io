@@ -1,0 +1,36 @@
+@import "./mixin.scss";
+
+$primary-main-color: #14094f;
+$primary-light-color: #b2beff;
+$primary-dark-color: #0f042e;
+$color-dark-blue09: rgba(20, 9, 79, 0.9);
+$color-white: #fff;
+$color-black: #000;
+$color-light-black: #0f042e;
+$color-light-pink: #ffb4a1;
+$color-purple: #5635ad;
+$color-light-purple: #ca8efe;
+$color-medium-blue: #804df6;
+$color-light-purple01: #d9cafc;
+$color-black07: rgba(15, 4, 46, 0.7);
+
+$grad-bg: radial-gradient(50% 50% at 50% 50%, $color-purple 0%, #13094e 100%);
+$grad-bg1: radial-gradient(70% 80% at 50% 50%, $color-purple 0%, #13094e 100%);
+$grad01: linear-gradient(
+  270deg,
+  rgba(189, 120, 253, 0) -0.74%,
+  $color-medium-blue 53.7%,
+  rgba(202, 142, 254, 0) 95.28%
+);
+
+// fonts
+$primary-font: "Space Mono", monospace, "Cormorant", serif, ui-monospace, Menlo,
+  Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono",
+  "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono",
+  "Courier New", monospace;
+
+$secondary-font: "monument spacemono";
+
+:export {
+  primaryColor: $primary-dark-color;
+}

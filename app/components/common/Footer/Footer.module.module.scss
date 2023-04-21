@@ -1,0 +1,56 @@
+@import "app/styles/variables.module.scss";
+.footer {
+  position: relative;
+  padding-top: 5rem;
+  background: $primary-main-color;
+  color: $primary-light-color;
+
+  .secLogo {
+    display: flex;
+    .logoWrapper {
+      flex: 0 0 30%;
+    }
+    .colRight {
+      flex: 1;
+      .menuWrapper {
+        ul {
+          margin: 0;
+          padding: 0;
+          justify-content: space-between;
+        }
+      }
+      .addressWrapper {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 5rem;
+        address {
+          font-size: 0.8rem;
+        }
+        .emailWrapper {
+          margin-left: auto;
+          h4 {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    background-color: $primary-dark-color;
+    min-height: 80px;
+    .containerSe {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+    }
+    .socialWrapper {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      .social {
+        margin-left: auto;
+      }
+    }
+  }
+}

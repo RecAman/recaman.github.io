@@ -1,0 +1,60 @@
+@import "app/styles/variables.module.scss";
+
+.title {
+  h1 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+  }
+  h2 {
+    color: $color-white;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 10px;
+    .endTitle {
+      color: transparent;
+      -webkit-text-stroke-width: 0.1px;
+      -webkit-text-stroke-color: $color-light-pink;
+      -webkit-animation: text-shadow 1.5s ease infinite;
+      animation: text-shadow 1.5s ease infinite;
+    }
+  }
+  h5 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+  h6 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+  }
+  p {
+    color: $primary-light-color;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .label {
+    color: $color-light-pink;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes text-shadow {
+  0% {
+    text-shadow: 0 0 0 rgba(255, 180, 161, 0.1);
+  }
+  50% {
+    text-shadow: 0 0 0.1rem rgba(255, 180, 161, 0.5);
+  }
+  to {
+    text-shadow: 0 0 0 rgba(255, 180, 161, 0.1);
+  }
+}

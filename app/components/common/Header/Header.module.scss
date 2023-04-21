@@ -1,0 +1,57 @@
+@import "app/styles/variables.module.scss";
+.header {
+  height: 75px;
+  position: fixed;
+  background: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 375ms ease;
+  z-index: 100;
+
+  &.darkHeader {
+    background-color: transparent;
+    &.sticky {
+      background-color: $color-dark-blue09;
+    }
+  }
+
+  &.lightHeader {
+    .menuWrapper {
+      a {
+        color: $primary-main-color;
+        &::after {
+          background: $grad01;
+        }
+      }
+    }
+
+    &.sticky {
+      background-color: hsla(0, 0%, 100%, 0.9);
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    & > div {
+      flex: 1;
+    }
+
+    .menuWrapper {
+      ul {
+        margin: 0;
+        padding: 0;
+        a {
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+
+  .loginWrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
