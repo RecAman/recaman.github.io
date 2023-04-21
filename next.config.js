@@ -6,7 +6,9 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    formats: ['image/avif', 'image/webp']
+    formats: ['image/avif', 'image/webp'],
+    domains: ['recaman.github.io'],
+    unoptimized: true,
   },
   output: 'export',
 }
