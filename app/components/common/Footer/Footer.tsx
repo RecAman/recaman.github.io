@@ -21,7 +21,7 @@ const Footer = () => {
             <Link href="/">
               <ImageFallback
                 className={styles.logo}
-                src="/images/logo.png"
+                src="/images/logo-no-background.svg"
                 alt="RecAman logo"
                 width={150}
                 height={29}

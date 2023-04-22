@@ -16,7 +16,7 @@
     .endTitle {
       color: transparent;
       -webkit-text-stroke-width: 0.1px;
-      -webkit-text-stroke-color: $color-light-pink;
+      -webkit-text-stroke-color: $color-light-pink-text;
       -webkit-animation: text-shadow 1.5s ease infinite;
       animation: text-shadow 1.5s ease infinite;
     }
@@ -32,13 +32,13 @@
     font-weight: bold;
   }
   p {
-    color: $primary-light-color;
+    color: $primary-light-color-text;
     font-size: 1rem;
     line-height: 1.6rem;
   }
 
   .label {
-    color: $color-light-pink;
+    color: $color-light-pink-text;
     font-size: 0.8rem;
     font-weight: 600;
     line-height: 1rem;

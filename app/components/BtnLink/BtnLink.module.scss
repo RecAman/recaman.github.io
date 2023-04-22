@@ -42,13 +42,7 @@
     pointer-events: none;
     margin: -1px;
     z-index: -1;
-    background: linear-gradient(
-      180deg,
-      $color-medium-blue,
-      #f7ecff 36.46%,
-      rgba(227, 195, 255, 0) 97.92%,
-      rgba(202, 142, 254, 0)
-    );
+    background: $grad-bg11;
   }
 
   &:after {
@@ -60,11 +54,7 @@
     bottom: 0;
     border-radius: inherit;
     pointer-events: none;
-    background: linear-gradient(
-      180deg,
-      rgba(247, 236, 255, 0.02),
-      rgba(247, 236, 255, 0.1)
-    );
+    background: $grad-bg12;
   }
 
   &:hover {
@@ -74,13 +64,7 @@
 
   &.secondary {
     &::before {
-      background: linear-gradient(
-        180deg,
-        $color-medium-blue,
-        #f7ecff 36.46%,
-        rgba(227, 195, 255, 0) 97.92%,
-        rgba(202, 142, 254, 0)
-      );
+      background: $grad-bg11;
     }
     &::after {
       background: linear-gradient(

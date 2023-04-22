@@ -1,0 +1,125 @@
+{
+  "secOne": {
+    "title": "Subject Matter Avatars",
+    "description": "Turn expert knowledge into precise searchable answers"
+  },
+  "secTwo": {
+    "title": "What is Nesh?"
+  },
+
+  "secThree": {
+    "slide1": {
+      "label": "01. WHY USE NESH",
+      "headingTwo": "Expert Knowledge Is Scattered",
+      "description": "Finding an answer involves wandering through a maze of platforms and content stores using CTRL+F and keywords."
+    },
+    "slide2": {
+      "label": "02. WHY USE NESH",
+      "headingTwo": "Experts Are Stretched Thin",
+      "description": "Experts understand industry and company concepts so they are constantly relied upon to answer complex questions."
+    },
+    "slide3": {
+      "label": "03. WHY USE NESH",
+      "headingTwo": "Experts  Are Not Available 24x7",
+      "description": "Expert availability is limited by meetings, time-zone conflicts, vacations, retirements, and resignations."
+    }
+  },
+  "secFour": {
+    "slide1": {
+      "label": "01. PRODUCT",
+      "headingTwo": "An AI Avatar To Answer All Your Questions",
+      "description": "Nesh turns Subject Matter Expertise into Subject Matter Avatars so that your company never loses knowledge when the experts move, retire, or resign."
+    },
+    "slide2": {
+      "label": "02. PRODUCT",
+      "headingTwo": "An AI That Understands Your Industry And Company",
+      "description": "Using artificial intelligence with deep-domain understanding, Nesh reads, learns, and understands all unstructured information wherever it is stored in your organization."
+    },
+    "slide3": {
+      "label": "03. PRODUCT",
+      "headingTwo": "An AI Avatar To Answer All Your Questions",
+      "description": "The more you interact with Nesh, the smarter she gets. Nesh continually improves her knowledge and understanding to become the ultimate Subject Matter Expert for your organization."
+    }
+  },
+  "secFive": {
+    "title": "Experiences",
+    "description": "These industries are using Nesh to access their technical knowledge",
+    "secFiveSlide": {
+      "card1": {
+        "titleFive": "Power and Utilities",
+        "description": "Rising global demand, volatile prices, and increasing environmental regulations are forcing the industry to face three challenges: reducing costs, optimizing asset performance, and improving its environmental footprint. Nesh helps with these challenges by providing better operational visibility, market trends, competitive intel, and empowers users to gain efficiency at every step in the E&P process."
+      },
+      "card2": {
+        "titleFive": "Power and Utilities",
+        "description": "This industry is changing at an unprecedented rate. The amount of knowledge and expertise required to stay ahead of the curve as the industry shifts from traditional to renewables is too much for one person or team. Nesh can help to stay ahead of changes in legislation, market trends and consumer outlook."
+      },
+      "card3": {
+        "titleFive": "Power and Utilities",
+        "description": "Rising global demand, volatile prices, and increasing environmental regulations are forcing the industry to face three challenges: reducing costs, optimizing asset performance, and improving its environmental footprint. Nesh helps with these challenges by providing better operational visibility, market trends, competitive intel, and empowers users to gain efficiency at every step in the E&P process."
+      }
+    }
+  },
+  "secSix": {
+    "title": "Answers to all your",
+    "endTitle": "Questions",
+    "description": "Nesh is constantly learning, getting smarter, and answering more questions. Here’s the latest count"
+  },
+  "secSeven": {
+    "title": "Answers to all your",
+    "description": "  Understand the pulse of the Industry and see how Nesh is being  used",
+    "secSevenSlide": {
+      "card1": {
+        "description": "What did my peers say about digital innovation"
+      },
+      "card2": {
+        "description": "What did my peers say about digital innovation"
+      },
+      "card3": {
+        "description": "What did my peers say about digital innovation"
+      },
+      "card4": {
+        "description": "What did my peers say about digital innovation"
+      },
+      "card5": {
+        "description": "What did my peers say about digital innovation"
+      },
+      "card6": {
+        "description": "What did my peers say about digital innovation"
+      }
+    }
+  },
+  "secEight": {
+    "title": "Latest",
+    "description": "Blogs, News, Papers, and Videos from and about us",
+    "secEightSlide": {
+      "card1": {
+        "headingSix": "Power and Utilities",
+        "label": "Blogs - Dec 06 2021"
+      },
+      "card2": {
+        "headingSix": "Power and Utilities",
+        "label": "Blogs - Dec 06 2021"
+      },
+      "card3": {
+        "headingSix": "Power and Utilities",
+        "label": "Blogs - Dec 06 2021"
+      },
+      "card4": {
+        "headingSix": "Power and Utilities",
+        "label": "Blogs - Dec 06 2021"
+      },
+      "card5": {
+        "headingSix": "Power and Utilities",
+        "label": "Blogs - Dec 06 2021"
+      },
+      "card6": {
+        "headingSix": "Power and Utilities",
+        "label": "Blogs - Dec 06 2021"
+      }
+    }
+  },
+  "secNine": {
+    "title": "Let’s do this",
+    "description": "See a live demo of Nesh or sign up for our upcoming Webinar."
+  }
+}

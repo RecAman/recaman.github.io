@@ -1,108 +1,94 @@
-import pricingImg from '../public/images/pricing1.png'
+import pricingImg from '../public/images/pricing1.png';
+import homeData from "app/locales/home-page.json";
 
 // hompage data
 export const secThreeSlideData = [
     {
       srcVideo: "/video/slide1.webm",
-      label: "01. WHY USE NESH",
-      headingTwo: "Expert Knowledge Is Scattered",
-      description:
-        "Finding an answer involves wandering through a maze of platforms and content stores using CTRL+F and keywords.",
+      label: homeData.secThree.slide1.label,
+      headingTwo: homeData.secThree.slide2.headingTwo,
+      description: homeData.secThree.slide2.description,
     },
     {
       srcVideo: "/video/slide2.webm",
-      label: "02. WHY USE NESH",
-      headingTwo: "Experts Are Stretched Thin",
-      description:
-        "Experts understand industry and company concepts so they are constantly relied upon to answer complex questions.",
+      label: homeData.secThree.slide1.label,
+      headingTwo: homeData.secThree.slide2.headingTwo,
+      description: homeData.secThree.slide2.description,
     },
     {
       srcVideo: "/video/slide3.webm",
-      label: "03. WHY USE NESH",
-      headingTwo: "Experts  Are Not Available 24x7",
-      description:
-        "Expert availability is limited by meetings, time-zone conflicts, vacations, retirements, and resignations.",
+      label: homeData.secThree.slide1.label,
+      headingTwo: homeData.secThree.slide2.headingTwo,
+      description: homeData.secThree.slide2.description,
     },
   ];
 
   export const secFourSlideData = [
     {
       srcVideo: "/video/product1.webm",
-      label: "01. PRODUCT",
-      headingTwo: "An AI Avatar To Answer All Your Questions",
-      description:
-        "Nesh turns Subject Matter Expertise into Subject Matter Avatars so that your company never loses knowledge when the experts move, retire, or resign.",
+      label: homeData.secFour.slide1.label,
+      headingTwo: homeData.secFour.slide2.headingTwo,
+      description: homeData.secFour.slide2.description,
     },
     {
       srcVideo: "/video/product2.webm",
-      label: "02. PRODUCT",
-      headingTwo: "An AI That Understands Your Industry And Company",
-      description:
-        "Using artificial intelligence with deep-domain understanding, Nesh reads, learns, and understands all unstructured information wherever it is stored in your organization.",
+      label: homeData.secFour.slide1.label,
+      headingTwo: homeData.secFour.slide2.headingTwo,
+      description: homeData.secFour.slide2.description,
     },
     {
       srcVideo: "/video/product3.webm",
-      label: "03. PRODUCT",
-      headingTwo: "An AI Avatar To Answer All Your Questions",
-      description:
-        "The more you interact with Nesh, the smarter she gets. Nesh continually improves her knowledge and understanding to become the ultimate Subject Matter Expert for your organization.",
+      label: homeData.secFour.slide1.label,
+      headingTwo: homeData.secFour.slide2.headingTwo,
+      description: homeData.secFour.slide2.description,
     },
   ];
 
   export const secFiveSlideData = [
     {
       srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
+      alt: homeData.secFive.title,
       width: 400,
       height: 400,
-      titleFive: "Power and Utilities",
-      description:
-        "This industry is changing at an unprecedented rate. The amount of knowledge and expertise required to stay ahead of the curve as the industry shifts from traditional to renewables is too much for one person or team. Nesh can help to stay ahead of changes in legislation, market trends and consumer outlook.",
+      titleFive: homeData.secFive.secFiveSlide.card1.titleFive,
+      description:homeData.secFive.secFiveSlide.card1.description
     },
     {
       srcImg: "/images/defaultImg.png",
-      alt: "Chemical",
+      alt:  homeData.secFive.title,
       width: 400,
       height: 400,
-      titleFive: "Chemical",
-      description:
-        "In the Chemical business, the devil is in the details. The end product is only as good as the process used to produce it and affected by the wide variations in how the product is utilized. Nesh can provide support to employees and customers to achieve the highest quality experience in the manufacturing and utilization of the product.",
+      titleFive: homeData.secFive.secFiveSlide.card2.titleFive,
+      description:homeData.secFive.secFiveSlide.card2.description
     },
     {
       srcImg: "/images/defaultImg.png",
-      alt: "Oil and Gas",
+      alt: homeData.secFive.title,
       width: 400,
       height: 400,
-      titleFive: "Oil and Gas",
-      description:
-        "Rising global demand, volatile prices, and increasing environmental regulations are forcing the industry to face three challenges: reducing costs, optimizing asset performance, and improving its environmental footprint. Nesh helps with these challenges by providing better operational visibility, market trends, competitive intel, and empowers users to gain efficiency at every step in the E&P process.",
+      titleFive: homeData.secFive.secFiveSlide.card3.titleFive,
+      description:homeData.secFive.secFiveSlide.card3.description
     },
   ];
 
   export const secSevenSlideData = [
     {
-      description: "What did my peers say about digital innovation",
+      description:homeData.secSeven.secSevenSlide.card1.description
     },
     {
-      description: "What did my peers say about digital innovation",
+      description: homeData.secSeven.secSevenSlide.card2.description
     },
     {
-      description: "What did my peers say about digital innovation",
+      description:homeData.secSeven.secSevenSlide.card3.description
     },
     {
-      description: "What did my peers say about digital innovation",
+      description:homeData.secSeven.secSevenSlide.card4.description
     },
     {
-      description: "What did my peers say about digital innovation",
+      description:homeData.secSeven.secSevenSlide.card5.description
     },
     {
-      description: "What did my peers say about digital innovation",
-    },
-    {
-      description: "What did my peers say about digital innovation",
-    },
-    {
-      description: "What did my peers say about digital innovation",
+      description:homeData.secSeven.secSevenSlide.card6.description
     },
   ];
 
@@ -110,147 +96,57 @@ export const secThreeSlideData = [
     {
       href: "/",
       srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
+      alt:  homeData.secEight.secEightSlide.card1.headingSix,
       width: 287,
       height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
+      headingSix: homeData.secEight.secEightSlide.card1.headingSix,
+      label: homeData.secEight.secEightSlide.card1.label
     },
     {
       href: "/",
       srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
+      alt:  homeData.secEight.secEightSlide.card1.headingSix,
       width: 287,
       height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
+      headingSix: homeData.secEight.secEightSlide.card2.headingSix,
+      label: homeData.secEight.secEightSlide.card2.label
     },
     {
       href: "/",
       srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
+      alt:  homeData.secEight.secEightSlide.card1.headingSix,
       width: 287,
       height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
+      headingSix: homeData.secEight.secEightSlide.card3.headingSix,
+      label: homeData.secEight.secEightSlide.card3.label
     },
     {
       href: "/",
       srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
+      alt:  homeData.secEight.secEightSlide.card1.headingSix,
       width: 287,
       height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
+      headingSix: homeData.secEight.secEightSlide.card4.headingSix,
+      label: homeData.secEight.secEightSlide.card4.label
     },
     {
       href: "/",
       srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
+      alt:  homeData.secEight.secEightSlide.card1.headingSix,
       width: 287,
       height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
+      headingSix: homeData.secEight.secEightSlide.card5.headingSix,
+      label: homeData.secEight.secEightSlide.card5.label
     },
     {
       href: "/",
       srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
+      alt:  homeData.secEight.secEightSlide.card1.headingSix,
       width: 287,
       height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
-    {
-      href: "/",
-      srcImg: "/images/defaultImg.png",
-      alt: "Power and Utilities",
-      width: 287,
-      height: 192,
-      headingSix: "Power and Utilities",
-      label: `Blogs - Dec 06 2021`,
-    },
+      headingSix: homeData.secEight.secEightSlide.card6.headingSix,
+      label: homeData.secEight.secEightSlide.card6.label
+    }
   ];
 
   // paricing page data

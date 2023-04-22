@@ -21,6 +21,8 @@ import {
 
 const Slideshow = dynamic(() => import("@/components/Slideshow/Slideshow"));
 const Gallery = dynamic(() => import("@/components/Gallery/Gallery"));
+import data from "./locales/home-page.json";
+import commonData from "./locales/common.json";
 
 // const Slideshow = dynamic(() => import("./Slideshow/Slideshow"), {
 //   ssr: false,
@@ -42,8 +44,8 @@ export default function Home() {
             </div>
             <div className={styles.textWrapper}>
               <Title
-                headingOne="Subject Matter Avatars"
-                description="Turn expert knowledge into precise searchable answers"
+                headingOne={data.secOne.title}
+                description={data.secOne.description}
               />
             </div>
           </div>
@@ -58,11 +60,11 @@ export default function Home() {
       <section className={styles.secTwo}>
         <div className={`container ${styles.containerFluid}`}>
           <div className={styles.content}>
-            <Title headingTwo="What is Nesh?" />
+            <Title headingTwo={data.secTwo.title} />
             <div className={styles.videoWrapper}>
               <ImageFallback
                 src="/images/defaultImg.png"
-                alt="Picture of the author"
+                alt={data.secTwo.title}
                 width={785}
                 height={440}
               />
@@ -70,11 +72,11 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.secBgImg}>
-          <ImageFallback src={whatIsBg} alt="what-is" priority />
+          <ImageFallback src={whatIsBg} alt={data.secTwo.title} priority />
         </div>
       </section>
 
-      {/* <section className={`secThree ${styles.secThree}`}>
+      <section className={`secThree ${styles.secThree}`}>
         <div className={`container ${styles.containerFluid}`}>
           <div className={styles.content}>
             <div className={styles.videoWrapper}>
@@ -92,15 +94,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className={`${styles.secFive}`}>
         <div className={`container ${styles.containerFluid}`}>
           <div className={styles.content}>
             <Title
               className={styles.title}
-              headingTwo="Experiences"
-              description="These industries are using Nesh to access their technical knowledge"
+              headingTwo={data.secFive.title}
+              description={data.secFive.description}
             />
             <div className={styles.cardWrapper}>
               {secFiveSlideData?.map((item, i) => (
@@ -116,14 +118,14 @@ export default function Home() {
           <div className={styles.content}>
             <Title
               className={styles.title}
-              headingTwo="Answers to all your"
-              endTitle="Questions"
-              description="Nesh is constantly learning, getting smarter, and answering more questions. Here’s the latest count"
+              headingTwo={data.secSix.title}
+              endTitle={data.secSix.endTitle}
+              description={data.secSix.description}
             />
             <div className={styles.imageWrap}>
               <ImageFallback
                 src="/images/avatar.gif"
-                alt="Picture of the author"
+                alt="avatar"
                 width={400}
                 height={400}
               />
@@ -136,19 +138,16 @@ export default function Home() {
         <div className={`container ${styles.containerSe}`}>
           <div className={styles.content}>
             <TextSlider
-              startText="New, Top, and Trending"
-              centerText="New, Top, and Trending"
-              endText="New, Top, and Trending"
+              startText={data.secSeven.title}
+              centerText={data.secSeven.title}
+              endText={data.secSeven.title}
             />
-            <p className={styles.textWrapper}>
-              Understand the pulse of the Industry and see how Nesh is being
-              used
-            </p>
+            <p className={styles.textWrapper}>{data.secSeven.description}</p>
           </div>
         </div>
-        {/* <div className={styles.galleryWrap}>
+        <div className={styles.galleryWrap}>
           <Gallery data={...secSevenSlideData} />
-        </div> */}
+        </div>
       </section>
 
       <section className={`secEight ${styles.secEight}`}>
@@ -156,14 +155,14 @@ export default function Home() {
           <div className={styles.content}>
             <Title
               className={styles.title}
-              headingTwo="Latest"
-              description="Blogs, News, Papers, and Videos from and about us"
+              headingTwo={data.secEight.title}
+              description={data.secEight.description}
             />
           </div>
         </div>
-        {/* <div className={styles.galleryWrap}>
+        <div className={styles.galleryWrap}>
           <Gallery data={...secEightSlideData} grid maskImg />
-        </div> */}
+        </div>
       </section>
 
       <section className={`${styles.secNine}`}>
@@ -179,12 +178,16 @@ export default function Home() {
             </div>
             <Title
               className={styles.title}
-              headingTwo="Let’s do this"
-              description="See a live demo of Nesh or sign up for our upcoming Webinar."
+              headingTwo={data.secNine.title}
+              description={data.secNine.description}
             />
             <div className={styles.btnWrapper}>
-              <BtnLink label="Request Demo" path="/request-demo" secondary />
-              <BtnLink label="Sign Up" path="/signup" />
+              <BtnLink
+                label={commonData.requestDemo}
+                path="/request-demo"
+                secondary
+              />
+              <BtnLink label={commonData.signupBtn} path="/signup" />
             </div>
           </div>
         </div>

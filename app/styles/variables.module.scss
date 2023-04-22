@@ -2,12 +2,14 @@
 
 $primary-main-color: #14094f;
 $primary-light-color: #b2beff;
+$primary-light-color-text: #b2beff;
 $primary-dark-color: #0f042e;
 $color-dark-blue09: rgba(20, 9, 79, 0.9);
 $color-white: #fff;
 $color-black: #000;
 $color-light-black: #0f042e;
 $color-light-pink: #ffb4a1;
+$color-light-pink-text: #ffb4a1;
 $color-purple: #5635ad;
 $color-light-purple: #ca8efe;
 $color-medium-blue: #804df6;
@@ -15,13 +17,84 @@ $color-light-purple01: #d9cafc;
 $color-black07: rgba(15, 4, 46, 0.7);
 
 $grad-bg: radial-gradient(50% 50% at 50% 50%, $color-purple 0%, #13094e 100%);
-$grad-bg1: radial-gradient(70% 80% at 50% 50%, $color-purple 0%, #13094e 100%);
-$grad01: linear-gradient(
+$grad-bg1: radial-gradient(
+  52.57% 52.57% at 50% 50%,
+  rgba(91, 70, 151, 0) 0,
+  rgba(15, 4, 46, 0.35) 100%
+);
+
+$grad-bg2: linear-gradient(
+  179.98deg,
+  $color-medium-blue 0.02%,
+  #784df6 22.41%,
+  $color-light-purple 47.93%,
+  #492961
+);
+
+$grad-bg3: radial-gradient(
+  88.33% 60.62% at 100.87% 48.33%,
+  rgb(86, 53, 173) 0%,
+  rgb(20, 9, 78) 100%
+);
+
+$grad-bg4: radial-gradient(
+  88.33% 60.62% at -10.33% 58.33%,
+  rgb(53, 53, 173) 0%,
+  rgb(20, 9, 78) 100%
+);
+
+$grad-bg5: radial-gradient(50% 50% at 50% 50%, $color-purple 0, #14094e 100%);
+$grad-bg6: linear-gradient(90deg, transparent, transparent 17%, #000 50%, #000);
+$grad-bg7: radial-gradient(
+  50% 50% at 50% 50%,
+  rgb(84, 51, 167) 0%,
+  rgb(20, 9, 78) 100%
+);
+
+$grad-bg8: radial-gradient(
+  50% 50% at 50% 50%,
+  rgb(86, 53, 173) 0%,
+  rgb(20, 9, 78) 100%
+);
+
+$grad-bg9: radial-gradient(
+  50% 50% at 50% 50%,
+  rgb(53, 53, 173) 0%,
+  rgb(20, 9, 78) 100%
+);
+
+$grad-bg10: linear-gradient(
   270deg,
   rgba(189, 120, 253, 0) -0.74%,
   $color-medium-blue 53.7%,
   rgba(202, 142, 254, 0) 95.28%
 );
+
+$grad-bg11: linear-gradient(
+  180deg,
+  $color-medium-blue,
+  #f7ecff 36.46%,
+  rgba(227, 195, 255, 0) 97.92%,
+  rgba(202, 142, 254, 0)
+);
+
+$grad-bg12: linear-gradient(
+  180deg,
+  rgba(247, 236, 255, 0.02),
+  rgba(247, 236, 255, 0.1)
+);
+
+$grad-bg13: linear-gradient(
+  90deg,
+  rgba(247, 236, 255, 0) 2.08%,
+  $color-white 27.68%,
+  $color-light-pink 51.04%,
+  $color-white 74.6%,
+  rgba(247, 236, 255, 0) 97.92%
+);
+
+$boxShadow: 0 0 0 0 #fff, 0 0 0 0 #fff,
+  inset 0 -3.1rem 8.1rem 0 rgba(19, 9, 79, 0.6), 0 0 0 0 #fff;
 
 // fonts
 $primary-font: "Space Mono", monospace, "Cormorant", serif, ui-monospace, Menlo,

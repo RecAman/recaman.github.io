@@ -48,10 +48,14 @@ const Header = () => {
             <Link href="/">
               <ImageFallback
                 className={styles.logo}
-                src="/images/logo.png"
+                src={`${
+                  !pathname.includes("pricing")
+                    ? "/images/logo-no-background.svg"
+                    : "/images/logo-no-background-purple.svg"
+                }`}
                 alt="RecAman logo"
-                width={210}
-                height={41}
+                width={230}
+                height={230}
               />
             </Link>
           </div>

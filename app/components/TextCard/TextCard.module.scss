@@ -4,13 +4,8 @@
   .description {
     padding: 2.75rem;
     margin: 0;
-    background-image: linear-gradient(
-      180deg,
-      rgba(247, 236, 255, 0.02),
-      rgba(247, 236, 255, 0.1)
-    );
-
-    color: $primary-light-color;
+    background-image: $grad-bg12;
+    color: $primary-light-color-text;
     font-size: 1rem;
     line-height: 1.6rem;
     width: 100%;
