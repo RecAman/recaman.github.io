@@ -8,7 +8,6 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
     domains: ['recaman.github.io'],
-    // unoptimized: true,
   },
   output: 'export',
 }

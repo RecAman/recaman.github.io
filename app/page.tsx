@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import styles from "./styles/page.module.scss";
 import whatIsBg from "public/images/what-is-bg.webp";
 import {
@@ -7,8 +8,8 @@ import {
   TextSlider,
   Title,
 } from "app/components";
-import Slideshow from "@/components/Slideshow/Slideshow";
-import Gallery from "@/components/Gallery/Gallery";
+// import Slideshow from "@/components/Slideshow/Slideshow";
+// import Gallery from "@/components/Gallery/Gallery";
 
 import {
   secThreeSlideData,
@@ -18,7 +19,8 @@ import {
   secEightSlideData,
 } from "mockData";
 
-// import dynamic from "next/dynamic";
+const Slideshow = dynamic(() => import("@/components/Slideshow/Slideshow"));
+const Gallery = dynamic(() => import("@/components/Gallery/Gallery"));
 
 // const Slideshow = dynamic(() => import("./Slideshow/Slideshow"), {
 //   ssr: false,
