@@ -19,8 +19,12 @@ import {
   secEightSlideData,
 } from "mockData";
 
-const Slideshow = dynamic(() => import("@/components/Slideshow/Slideshow"));
-const Gallery = dynamic(() => import("@/components/Gallery/Gallery"));
+const Slideshow = dynamic(() => import("@/components/Slideshow/Slideshow"), {
+  ssr: false,
+});
+const Gallery = dynamic(() => import("@/components/Gallery/Gallery"), {
+  ssr: false,
+});
 import data from "./locales/home-page.json";
 import commonData from "./locales/common.json";
 
