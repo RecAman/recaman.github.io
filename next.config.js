@@ -9,7 +9,7 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     domains: ['recaman.github.io'],
   },
-  // output: 'export',
+   output: 'export',
 }
 
 module.exports = nextConfig
