@@ -74,7 +74,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={`secThree ${styles.secThree}`}>
+      {/* <section className={`secThree ${styles.secThree}`}>
         <div className={`container ${styles.containerFluid}`}>
           <div className={styles.content}>
             <div className={styles.videoWrapper}>
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className={`${styles.secFive}`}>
         <div className={`container ${styles.containerFluid}`}>
@@ -146,9 +146,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={styles.galleryWrap}>
+        {/* <div className={styles.galleryWrap}>
           <Gallery data={...secSevenSlideData} />
-        </div>
+        </div> */}
       </section>
 
       <section className={`secEight ${styles.secEight}`}>
@@ -161,9 +161,9 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={styles.galleryWrap}>
+        {/* <div className={styles.galleryWrap}>
           <Gallery data={...secEightSlideData} grid maskImg />
-        </div>
+        </div> */}
       </section>
 
       <section className={`${styles.secNine}`}>
