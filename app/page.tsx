@@ -64,7 +64,7 @@ export default function Home() {
       <section className={styles.secTwo}>
         <div className={`container ${styles.containerFluid}`}>
           <div className={styles.content}>
-            <Title headingTwo={data.secTwo.title} />
+            <Title className={styles.title} headingTwo={data.secTwo.title} />
             <div className={styles.videoWrapper}>
               <ImageFallback
                 src="/images/defaultImg.png"
