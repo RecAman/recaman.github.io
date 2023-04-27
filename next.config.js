@@ -8,7 +8,7 @@ const nextConfig = {
   },
   images: {
     formats: ['image/avif', 'image/webp'],
-    //  domains: ['recaman.github.io'],
+    domains: ['recaman.github.io'],
   },
   
   output: isProd ?   'export' :'standalone',
