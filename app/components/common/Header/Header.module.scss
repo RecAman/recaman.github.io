@@ -16,28 +16,10 @@
     }
   }
 
-  &.lightHeader {
-    .menuWrapper {
-      a {
-        color: $primary-main-color;
-        &::after {
-          background: $grad-bg10;
-        }
-      }
-    }
-
-    &.sticky {
-      background-color: hsla(0, 0%, 100%, 0.9);
-    }
-  }
-
   .content {
     display: flex;
     align-items: center;
     padding-top: 20px;
-    & > div {
-      flex: 1;
-    }
 
     .logoWrapper {
       a {
@@ -50,11 +32,12 @@
     }
 
     .menuWrapper {
+      flex: 1;
       ul {
         margin: 0;
         padding: 0;
         a {
-          letter-spacing: 2px;
+          letter-spacing: 1px;
         }
       }
     }

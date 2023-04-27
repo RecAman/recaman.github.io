@@ -149,8 +149,8 @@ export const secThreeSlideData = [
     }
   ];
 
-  // paricing page data
-  export const paricingData = [
+  // pricing page data
+  export const pricingData = [
     {
       href: "/",
       srcImg: pricingImg,

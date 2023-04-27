@@ -1,7 +1,7 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
 import { FreeMode, Grid } from "swiper";
-import { Cards, TextCard } from "app/components";
+import { Cards, ImageFallback, TextCard } from "app/components";
 import { FunctionComponent, ReactNode } from "react";
 import { CardsData } from "@/interfaces/data.type";
 
@@ -10,57 +10,55 @@ import "swiper/css/grid";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-interface GalleryProps {
+interface GalleryProps extends SwiperProps {
   data?: CardsData[];
   children?: ReactNode;
-  grid?: boolean;
   maskImg?: boolean;
+  showGrid?: number;
+  galleryImg?: boolean;
+  galleryText?: boolean;
 }
 
-const Gallery: FunctionComponent<GalleryProps> = ({ maskImg, grid, data }) => {
+const Gallery: FunctionComponent<GalleryProps> = ({
+  className,
+  maskImg,
+  showGrid,
+  data,
+  galleryImg,
+  galleryText,
+  ...props
+}) => {
   return (
     <>
-      {!grid && (
-        <Swiper
-          slidesPerView={4}
-          spaceBetween={20}
-          freeMode={true}
-          // navigation
-          centeredSlides={true}
-          modules={[FreeMode]}
-          className="gallery"
-        >
-          {data?.map((x, i) => {
-            return (
-              <SwiperSlide key={i}>
-                <TextCard description={x.description} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      )}
-
-      {grid && (
-        <Swiper
-          slidesPerView={3}
-          grid={{
-            rows: 2,
-          }}
-          centeredSlides={true}
-          spaceBetween={30}
-          freeMode={true}
-          modules={[Grid, FreeMode]}
-          className="galleryGrid"
-        >
-          {data?.map((x, i) => {
-            return (
-              <SwiperSlide key={i}>
-                <Cards data={x} maskImg={maskImg} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      )}
+      <Swiper
+        {...props}
+        spaceBetween={20}
+        freeMode={true}
+        // navigation
+        centeredSlides={true}
+        modules={[Grid, FreeMode]}
+        className={className}
+        grid={{
+          rows: showGrid,
+        }}
+      >
+        {data?.map((x, i) => {
+          return (
+            <SwiperSlide key={i}>
+              {galleryText && <TextCard data={x} />}
+              {galleryImg && (
+                <ImageFallback
+                  src={x.srcImg || ""}
+                  alt={x.alt || ""}
+                  width={400}
+                  height={400}
+                />
+              )}
+              {showGrid && <Cards data={x} maskImg={maskImg} />}
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </>
   );
 };

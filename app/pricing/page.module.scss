@@ -1,17 +1,45 @@
 @import "../styles/variables.module.scss";
 
 .pricingPage {
-  padding-top: 15vh;
-  .titleWrapper {
-    text-align: center;
+  .secOne {
+    padding: 15vh;
+    background-image: $grad-bg;
+    .titleWrapper {
+      text-align: center;
 
-    * {
-      color: $color-light-black;
+      * {
+        color: $color-white;
+      }
+    }
+    .pricingWrapper {
+      display: flex;
+      justify-content: center;
+      padding: 10vh 0;
+      color: $color-white;
     }
   }
-  .paricingWrapper {
-    display: flex;
-    justify-content: center;
-    padding: 10vh 0;
+
+  .secTwo {
+    background-image: $grad-bg;
+    position: relative;
+    color: $color-white;
+    .containerSe {
+      height: 500px;
+    }
+    .content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .titleWrapper {
+        text-align: center;
+        h2 {
+          @include lineClamp(1);
+        }
+        p {
+          @include lineClamp(3);
+        }
+      }
+    }
   }
 }

@@ -8,12 +8,33 @@
   height: 13.563rem;
   width: 100%;
 
+  .title {
+    font-weight: bold;
+  }
+
+  .iconImg {
+    border-radius: 50%;
+  }
+
   .description {
     margin: 0;
     color: $primary-light-color-text;
     font-size: 1rem;
     line-height: 1.6rem;
+    &.desc {
+      color: $color-light-pink-text;
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
   }
+
+  .location {
+    color: $primary-light-color-text;
+    margin-top: 10px;
+    display: block;
+    font-size: 0.7rem;
+  }
+
   &:after {
     content: "";
     position: absolute;

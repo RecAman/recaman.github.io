@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
   reactStrictMode:true,
   trailingSlash: true,
@@ -7,9 +8,10 @@ const nextConfig = {
   },
   images: {
     formats: ['image/avif', 'image/webp'],
-    // domains: ['recaman.github.io'],
+    //  domains: ['recaman.github.io'],
   },
-    output: 'export',
+  
+  output: isProd ?   'export' :'standalone',
 }
 
 module.exports = nextConfig

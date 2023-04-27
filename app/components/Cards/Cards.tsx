@@ -8,19 +8,28 @@ interface CardsProps {
   maskImg?: boolean;
   className?: string;
   data?: CardsData;
+  vertical?: boolean;
 }
 
 export const Cards: FunctionComponent<CardsProps> = ({
   className,
   maskImg,
   data,
+  vertical,
 }) => {
   return (
-    <div className={`${styles.cards} ${className ?? ""}`}>
+    <div
+      className={`${styles.cards} ${className ?? ""} ${
+        vertical ? styles.vertical : ""
+      }`}
+    >
       {/* video */}
       {data?.srcVideo && (
         <div className={styles.videoWrapper}>
-          <video className={styles.video} preload="none" autoPlay muted loop>
+          {/* <video className={`lazy`} autoPlay muted loop playsInline>
+            <source data-src={data?.srcVideo} />
+          </video> */}
+          <video className={``} autoPlay muted loop playsInline>
             <source src={data?.srcVideo} />
           </video>
         </div>
@@ -28,7 +37,11 @@ export const Cards: FunctionComponent<CardsProps> = ({
 
       {/* image */}
       {data?.srcImg && (
-        <div className={maskImg ? styles.maskImgWrapper : ""}>
+        <div
+          className={`${styles.imgWrapper} ${
+            maskImg ? styles.maskImgWrapper : ""
+          }`}
+        >
           <ImageFallback
             src={data?.srcImg}
             alt={data?.alt || "image"}

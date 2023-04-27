@@ -4,11 +4,9 @@ import { useEffect, useMemo, useState } from "react";
 import Menu from "@/components/Menu/Menu";
 import styles from "./Header.module.scss";
 import { BtnLink, ImageFallback } from "app/components";
-import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
-  const pathname = usePathname();
 
   useEffect(() => {
     if (window.scrollY > 10 && !scrolling) {
@@ -32,6 +30,7 @@ const Header = () => {
       { label: "Home", path: "/", targetSegment: null },
       { label: "Pricing", path: "/pricing", targetSegment: "pricing" },
       { label: "About Us", path: "/about", targetSegment: "about" },
+      { label: "Contact", path: "/contact", targetSegment: "contact" },
     ],
     []
   );
@@ -39,7 +38,7 @@ const Header = () => {
   return (
     <header
       className={`${styles.header} ${scrolling && styles.sticky} ${
-        pathname.includes("pricing") ? styles.lightHeader : styles.darkHeader
+        styles.darkHeader
       }`}
     >
       <div className={`container`}>
@@ -48,11 +47,7 @@ const Header = () => {
             <Link href="/">
               <ImageFallback
                 className={styles.logo}
-                src={`${
-                  !pathname.includes("pricing")
-                    ? "/images/logo-no-background.svg"
-                    : "/images/logo-no-background-purple.svg"
-                }`}
+                src={"/images/logo-no-background.svg"}
                 alt="RecAman logo"
                 width={230}
                 height={230}
@@ -63,11 +58,7 @@ const Header = () => {
             <Menu data={...dataMenu} />
           </div>
           <div className={styles.loginWrapper}>
-            <BtnLink
-              secondary={pathname.includes("pricing")}
-              label="Login"
-              path="/login"
-            />
+            <BtnLink label="Login" path="/login" />
           </div>
         </div>
       </div>
