@@ -1,0 +1,160 @@
+@import "../styles/variables.module.scss";
+
+.aboutPage {
+  color: $color-white;
+  .secOne {
+    @include fullScreenSec();
+    padding-top: 15vh;
+    position: relative;
+    background: $grad-bg;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $grad-bg14;
+    }
+    .imageWrap {
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+
+  .secTwo {
+    background: $grad-bg;
+    padding: 20vh;
+    .cardWrapper {
+      mix-blend-mode: lighten;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        max-width: 480px;
+        width: 100%;
+        height: auto;
+      }
+
+      [class*="Cards_cards"] {
+        margin-bottom: 10vh;
+        &:nth-child(2n) {
+          flex-direction: row-reverse;
+          & > div {
+            margin-right: 0;
+            margin-left: 5%;
+          }
+        }
+      }
+    }
+  }
+
+  .secFour {
+    background: $grad-bg;
+    padding: 20vh;
+    .titleWrapper {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 150px;
+    }
+    .teamWrapper {
+      padding-top: 10vh;
+      display: flex;
+      flex-wrap: wrap;
+      [class*="Cards_cards"] {
+        flex: 0 0 46%;
+        margin: 0 2% 10vh;
+        p {
+          color: $color-light-pink-text;
+        }
+        [class*="Cards_imgWrapper"] {
+          width: 100%;
+          img {
+            border-radius: 50%;
+            max-width: 300px;
+            max-height: 300px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .secFive {
+    @include fullScreenSec();
+    padding: 20vh 0;
+    background-image: $grad-bg9;
+    .content {
+      .textWrapper {
+        margin-bottom: 10vh;
+        font-size: 1.3rem;
+        color: $primary-light-color-text;
+        p {
+          @include lineClamp(3);
+        }
+      }
+    }
+
+    .galleryWrap {
+      margin-top: 15vh;
+      width: 100%;
+      height: 60vh;
+      cursor: grab;
+      user-select: none;
+      touch-action: pan-y;
+      p {
+        @include lineClamp(6);
+      }
+    }
+  }
+
+  .secSix {
+    @include fullScreenSec();
+    padding: 20vh 0;
+    background-image: $grad-bg9;
+    .content {
+      .textWrapper {
+        margin-bottom: 10vh;
+        font-size: 1.3rem;
+        color: $primary-light-color-text;
+        p {
+          @include lineClamp(3);
+        }
+      }
+    }
+
+    .galleryWrap {
+      margin-top: 15vh;
+      cursor: grab;
+      user-select: none;
+      touch-action: pan-y;
+      p {
+        @include lineClamp(6);
+      }
+    }
+  }
+
+  .secSeven {
+    background-image: $grad-bg;
+    position: relative;
+    .containerSe {
+      height: 500px;
+    }
+    .content {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .titleWrapper {
+        text-align: center;
+        h2 {
+          @include lineClamp(1);
+        }
+        p {
+          @include lineClamp(3);
+        }
+      }
+    }
+  }
+}

@@ -57,11 +57,7 @@ $grad-bg8: radial-gradient(
   rgb(20, 9, 78) 100%
 );
 
-$grad-bg9: radial-gradient(
-  50% 50% at 50% 50%,
-  rgb(53, 53, 173) 0%,
-  rgb(20, 9, 78) 100%
-);
+$grad-bg9: radial-gradient(50% 50% at 50% 50%, #3535ad 0%, #13094e 100%);
 
 $grad-bg10: linear-gradient(
   270deg,
@@ -92,6 +88,8 @@ $grad-bg13: linear-gradient(
   $color-white 74.6%,
   rgba(247, 236, 255, 0) 97.92%
 );
+
+$grad-bg14: linear-gradient(180deg, rgba(19, 9, 79, 0) 20.2%, #13094f);
 
 $boxShadow: 0 0 0 0 #fff, 0 0 0 0 #fff,
   inset 0 -3.1rem 8.1rem 0 rgba(19, 9, 79, 0.6), 0 0 0 0 #fff;

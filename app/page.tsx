@@ -1,3 +1,4 @@
+"use client";
 import dynamic from "next/dynamic";
 import styles from "./styles/page.module.scss";
 import whatIsBg from "public/images/what-is-bg.webp";
@@ -19,20 +20,24 @@ import {
   secEightSlideData,
 } from "mockData";
 
-const Slideshow = dynamic(() => import("@/components/Slideshow/Slideshow"), {
-  ssr: false,
-});
+const Slideshow = dynamic(() => import("@/components/Slideshow/Slideshow"));
 const Gallery = dynamic(() => import("@/components/Gallery/Gallery"), {
   ssr: false,
 });
 import data from "./locales/home-page.json";
 import commonData from "./locales/common.json";
+import { useEffect, useState } from "react";
 
 // const Slideshow = dynamic(() => import("./Slideshow/Slideshow"), {
 //   ssr: false,
 // });
 
 export default function Home() {
+  const [imgSrc, setImgSrc] = useState(false);
+
+  useEffect(() => {
+    setImgSrc(true);
+  }, [imgSrc]);
   return (
     <main className={styles.homePage}>
       <section className={styles.secOne}>
@@ -55,7 +60,16 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.secBgVideo}>
-          <video className={styles.video} autoPlay loop muted>
+          {/* <video
+            className={`${styles.video} lazy`}
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source data-src="/video/homeSec-1.webm" />
+          </video> */}
+          <video className={`${styles.video}`} autoPlay muted loop playsInline>
             <source src="/video/homeSec-1.webm" />
           </video>
         </div>
@@ -76,7 +90,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.secBgImg}>
-          <ImageFallback src={whatIsBg} alt={data.secTwo.title} priority />
+          <ImageFallback src={whatIsBg} alt={data.secTwo.title} />
         </div>
       </section>
 
@@ -150,7 +164,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.galleryWrap}>
-          <Gallery data={...secSevenSlideData} />
+          <Gallery data={...secSevenSlideData} slidesPerView={4} galleryText />
         </div>
       </section>
 
@@ -165,7 +179,12 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.galleryWrap}>
-          <Gallery data={...secEightSlideData} grid maskImg />
+          <Gallery
+            data={...secEightSlideData}
+            slidesPerView={3}
+            showGrid={2}
+            maskImg
+          />
         </div>
       </section>
 

@@ -1,0 +1,40 @@
+@import "../styles/variables.module.scss";
+
+.contactPage {
+  .secOne {
+    padding: 25vh 0;
+    background-image: $grad-bg;
+    .titleWrapper {
+      text-align: center;
+      * {
+        color: $color-white;
+      }
+    }
+    .contact {
+      padding: 10vh 0;
+      color: $color-white;
+      text-align: center;
+      .addressWrapper {
+        font-size: 1.3rem;
+
+        .address {
+          display: block;
+        }
+        a {
+          margin-top: 20px;
+          display: block;
+        }
+        * {
+          color: $primary-light-color-text;
+        }
+      }
+      .social {
+        margin-top: 2vh;
+        a {
+          color: $color-light-pink-text;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

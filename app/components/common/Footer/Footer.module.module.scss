@@ -53,4 +53,17 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .secLogo {
+      flex-direction: column;
+      .menuWrapper {
+        ul {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
 }

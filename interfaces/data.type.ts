@@ -17,4 +17,5 @@ export type CardsData = {
   height?: number;
   href?: string;
   desc?: { text: string; }[];
+  location?: string;
 };

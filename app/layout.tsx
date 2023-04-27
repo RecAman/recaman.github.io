@@ -26,11 +26,6 @@ import Loading from "./loading";
 // });
 
 export const metadata = {
-  icons: {
-    icon: { url: "/images/favicon.png", type: "image/png" },
-    shortcut: { url: "/images/favicon.png", type: "image/png" },
-  },
-
   title: "RecAman",
   description:
     "chat-bot,recommender system,implicit opinion mining,knowledge garph",

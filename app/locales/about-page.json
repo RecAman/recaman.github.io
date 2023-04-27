@@ -1,0 +1,68 @@
+{
+  "secOne": {
+    "title": "Company"
+  },
+  "secTwo": {
+    "products": {
+      "card1": {
+        "headingTwo": "Mission",
+        "description": "Rising global demand, volatile prices, and increasing environmental regulations are forcing the industry to face three challenges: reducing costs, optimizing asset performance, and improving its environmental footprint. Nesh helps with these challenges by providing better operational visibility, market trends, competitive intel, and empowers users to gain efficiency at every step in the E&P process."
+      },
+      "card2": {
+        "headingTwo": "Mission",
+        "description": "This industry is changing at an unprecedented rate. The amount of knowledge and expertise required to stay ahead of the curve as the industry shifts from traditional to renewables is too much for one person or team. Nesh can help to stay ahead of changes in legislation, market trends and consumer outlook."
+      }
+    }
+  },
+
+  "secFour": {
+    "title": "Our Team",
+    "description": "Nesh is changing the way Enterprise content is searched and consumed. Meet the team that is turning this vision into a reality.",
+    "products": {
+      "card1": {
+        "headingFive": "Sidd Gupta",
+        "description": "Founder and CEO"
+      },
+      "card2": {
+        "headingFive": "Sidd Gupta",
+        "description": "Founder and CEO"
+      },
+      "card3": {
+        "headingFive": "Sidd Gupta",
+        "description": "Founder and CEO"
+      },
+      "card4": {
+        "headingFive": "Sidd Gupta",
+        "description": "Founder and CEO"
+      }
+    }
+  },
+
+  "secFive": {
+    "title": "The Photo Roll",
+    "description": "Places we've been, things we've done, laughs we've had"
+  },
+
+  "secSix": {
+    "title": "Join our team and change the way people access complex information",
+    "secSixGallery": {
+      "card1": {
+        "title": "Lead Software Engineer",
+        "description": "Job Type Full Time",
+        "location": "Remote"
+      },
+      "card2": {
+        "title": "Lead Software Engineer",
+        "description": "Job Type Full Time"
+      },
+      "card3": {
+        "title": "Lead Software Engineer",
+        "description": "Job Type Full Time"
+      }
+    }
+  },
+  "secSeven": {
+    "title": "Join the Nesh mailing list",
+    "description": "Stay ahead of NLU and Information Search movement with our newsletter."
+  }
+}

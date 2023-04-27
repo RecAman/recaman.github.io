@@ -6,7 +6,7 @@
   .secOne {
     @include fullScreenSec();
     background-image: $grad-bg;
-    color: $color-white;
+
     .content {
       display: flex;
       align-items: flex-end;
@@ -167,6 +167,9 @@
         width: 100%;
         .cards {
           margin-bottom: 30px;
+          [class*="Cards_imgWrapper"] {
+            flex: none;
+          }
           h2 {
             font-size: 1.5rem;
             margin-bottom: 10px;
@@ -175,7 +178,6 @@
             justify-content: flex-end;
           }
           > div:first-child {
-            padding-right: 5%;
             img {
               width: 290px;
               height: 290px;
