@@ -1,5 +1,5 @@
 import pricingImg from '../public/images/pricing1.png';
-import homeData from "app/locales/home-page.json";
+import homeData from "app/locales/en/home-page.json";
 
 // hompage data
 export const secThreeSlideData = [

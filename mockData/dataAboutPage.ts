@@ -1,4 +1,4 @@
-import aboutData from "app/locales/about-page.json";
+import aboutData from "app/locales/en/about-page.json";
 
 export const secTwoAboutData = [
   {

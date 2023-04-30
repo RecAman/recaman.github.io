@@ -1,6 +1,6 @@
 import styles from "./page.module.scss";
 import { Cards, ImageFallback, Title } from "app/components";
-import aboutData from "app/locales/about-page.json";
+import aboutData from "app/locales/en/about-page.json";
 import bgImg from "public/images/aout-bg.webp";
 import bgImgSecSeven from "public/images/join-section-bg.webp";
 

@@ -24,8 +24,8 @@ const Slideshow = dynamic(() => import("@/components/Slideshow/Slideshow"));
 const Gallery = dynamic(() => import("@/components/Gallery/Gallery"), {
   ssr: false,
 });
-import data from "./locales/home-page.json";
-import commonData from "./locales/common.json";
+import data from "./locales/en/home-page.json";
+import commonData from "./locales/en/common.json";
 import { useEffect, useState } from "react";
 
 // const Slideshow = dynamic(() => import("./Slideshow/Slideshow"), {

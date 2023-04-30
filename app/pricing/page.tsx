@@ -2,7 +2,7 @@ import { pricingData } from "mockData";
 import styles from "./page.module.scss";
 import { PricingCard, Title, ImageFallback } from "app/components";
 import bgImgSecSeven from "public/images/join-section-bg.webp";
-import dataPr from "app/locales/pricing-page.json";
+import dataPr from "app/locales/en/pricing-page.json";
 
 export default function Pricing() {
   return (

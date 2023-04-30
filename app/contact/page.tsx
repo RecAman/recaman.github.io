@@ -1,6 +1,6 @@
 import styles from "./page.module.scss";
 import { Title, ImageFallback } from "app/components";
-import contactData from "app/locales/contact-page.json";
+import contactData from "app/locales/en/contact-page.json";
 import Link from "next/link";
 
 export default function contact() {
