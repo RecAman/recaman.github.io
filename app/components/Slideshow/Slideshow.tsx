@@ -6,7 +6,7 @@ import {
   Scrollbar,
   EffectFade,
   A11y,
-} from "swiper";
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";

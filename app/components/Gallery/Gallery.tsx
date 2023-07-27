@@ -1,6 +1,6 @@
 "use client";
 import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
-import { FreeMode, Grid } from "swiper";
+import { FreeMode, Grid } from "swiper/modules";
 import { Cards, ImageFallback, TextCard } from "app/components";
 import { FunctionComponent, ReactNode } from "react";
 import { CardsData } from "@/interfaces/data.type";
