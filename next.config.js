@@ -11,7 +11,7 @@ const nextConfig = {
     domains: ['recaman.github.io'],
   },
   
-  output: isProd ?   'export' :'standalone',
+  // output: isProd ?   'export' :'standalone',
 }
 
 module.exports = nextConfig
